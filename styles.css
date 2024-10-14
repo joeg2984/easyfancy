@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-section {
+    height: 100vh;
+    background-image: url('top.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-size 0.3s ease-in-out; /* Smooth transition for resizing */
+}
+
+/* Adjust background for smaller screens */
+@media (max-width: 768px) {
+    .top-section {
+        background-size: contain;
+    }
+}
+
+.top-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .top-section {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.search-section {
+    padding: 50px;
+    background-image: url('bottom.png'); /* Updated to "Easy/Fancy" image */
+    background-size: full;
+    background-position: center;
+    text-align: center;
+    color: white;
+    
+}
+
+.search-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.search-bar {
+    padding: 15px;
+    width: 60%;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.recipe-card p {
+    margin: 8px 0;
+}
+
+.recipe-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}

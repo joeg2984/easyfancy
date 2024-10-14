@@ -1,0 +1,8 @@
+from db import engine
+from models.recipe import Recipe  # import your models
+from models.ingredient import Ingredient
+from models.recipe_ingredient_link import RecipeIngredientLink
+from sqlmodel import SQLModel
+
+
+target_metadata = SQLModel.metadata
